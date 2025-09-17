@@ -1,0 +1,107 @@
+html
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Bulma Robotu</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">BLUEFLIX</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">ANA SAYFA</a></li>
+        <li><a href="filmler.html">FİLMLER</a></li>
+        <li><a href="diziler.html">DİZİLER</a></li>
+        <li><a href="robot.html">ROBOT</a></li>
+        <li><a href="destek.html">DESTEK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Slider -->
+  <div class="hero-slider">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  <!-- Listem Section - Popüler slider öncesi -->
+  <section class="category-row" id="my-list-section">
+    <h2>Listem</h2>
+    <div id="my-list-slider-container" class="slider-container">
+      <button id="my-list-prev">‹</button>
+      <div id="my-list-slider" class="slider">
+        <!-- JS ile favori filmler eklenecek -->
+      </div>
+      <button id="my-list-next">›</button>
+    </div>
+  </section>
+
+
+  <!-- Popüler Kategori Slider -->
+  <div class="category-row">
+    <h2>Popüler</h2>
+    <div id="popular-slider-container">
+      <button id="popular-prev">‹</button>
+      <div id="popular-slider">
+        <!-- JS ile posterler eklenecek -->
+      </div>
+      <button id="popular-next">›</button>
+    </div>
+  </div>
+
+  <!-- KATEGORİLER -->
+  <section class="category-row">
+    <h2>Korku</h2>
+    <div class="slider-container">
+      <button class="prev">&#10094;</button>
+      <div class="category-slider" id="horror-slider"></div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="category-row">
+    <h2>Gerilim</h2>
+    <div class="slider-container">
+      <button class="prev">&#10094;</button>
+      <div class="category-slider" id="thriller-slider"></div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="category-row">
+    <h2>Dram</h2>
+    <div class="slider-container">
+      <button class="prev">&#10094;</button>
+      <div class="category-slider" id="drama-slider"></div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="category-row">
+    <h2>Komedi</h2>
+    <div class="slider-container">
+      <button class="prev">&#10094;</button>
+      <div class="category-slider" id="comedy-slider"></div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="category-row">
+    <h2>Bilim Kurgu</h2>
+    <div class="slider-container">
+      <button class="prev">‹</button>
+      <div class="category-slider" id="scifi-slider"></div>
+      <button class="next">›</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
